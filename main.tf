@@ -86,7 +86,7 @@ resource "aws_security_group" "Project1_DevApp_Sg" {
 
 resource "aws_key_pair" "project1_key" {
   key_name   = "pj1key"
-  public_key = file("~/.ssh/pj1key.pub")
+  public_key = file("PATH-TO-YOUR-SSH-KEY")
 }
 
 resource "aws_instance" "dev1" {
