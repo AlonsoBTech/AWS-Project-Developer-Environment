@@ -80,7 +80,7 @@ resource "aws_security_group" "Project1_DevApp_Sg" {
   }
 
   tags = {
-    Name = "Allow_ssh_http_https"
+    Name = "Dev-SG"
   }
 }
 
