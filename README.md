@@ -1,4 +1,4 @@
-# AWS DEVELOPER ENVIRONMENT
+# AWS Developer Environment
 
 # About
 Creating an environment in AWS for developers. This environment will have an EC2 deployed that has docker installed
