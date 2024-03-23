@@ -55,7 +55,7 @@ resource "aws_security_group" "Project1_DevApp_Sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["PLACE-YOUR-IP-ADDRESS-HERE"]
+    cidr_blocks = ["${local.my_ip.ip}/32"]
   }
 
   ingress {
