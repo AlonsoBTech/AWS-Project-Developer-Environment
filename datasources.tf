@@ -13,3 +13,10 @@ data "aws_ami" "ubuntu" {
 
   owners = ["099720109477"]
 }
+
+data "http" "my_public_ip" {
+    url = "https://ifconfig.co/json"
+    request_headers = {
+        Accept = "application/json"
+    }
+}
