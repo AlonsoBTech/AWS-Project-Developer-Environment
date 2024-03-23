@@ -1,18 +1,16 @@
 # AWS DEVELOPER ENVIRONMENT
 
-
-
-# ABOUT
+# About
 Creating an environment in AWS for developers. This environment will have a EC2 deployed that has docker installed
 and ready to use for spinning up containers when needed.
 
-# PREREQUISITES
+# Prerequisites
 - AWS Account
 - AWS IAM User
 - Terraform Insatlled
 - IDE of choice to write Terraform code
 
-# WHAT IS BEING CREATED
+# What Is Being Created
 - VPC
 - VPC Subnet
 - VPC Internet Gateway
