@@ -1,3 +1,4 @@
+### Creating VPC
 resource "aws_vpc" "project1" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
@@ -8,6 +9,7 @@ resource "aws_vpc" "project1" {
   }
 }
 
+### Creating Public Subnet
 resource "aws_subnet" "Project1_Public_Subnet_1" {
   vpc_id                  = aws_vpc.project1.id
   cidr_block              = "10.0.1.0/24"
@@ -19,6 +21,7 @@ resource "aws_subnet" "Project1_Public_Subnet_1" {
   }
 }
 
+### Creating Internet Gateway
 resource "aws_internet_gateway" "Project1_IGW" {
   vpc_id = aws_vpc.project1.id
 
@@ -27,25 +30,27 @@ resource "aws_internet_gateway" "Project1_IGW" {
   }
 }
 
-resource "aws_route_table" "Project_Public_Route" {
-  vpc_id = aws_vpc.project1.id
+### Creating Route Table
+resource "aws_route_table" "Project_Public_RT" {
+    vpc_id = aws_vpc.project1.id
 
-  tags = {
-    Name = "Project1_Pub_RT"
-  }
+    route {
+        cidr_block = "0.0.0.0/0"
+        gateway_id = aws_internet_gateway.Project1_IGW.id
+    }
+
+    tags = {
+      Name = "Project1_PublicRT"
+    }
 }
 
-resource "aws_route" "Project1_Route_Pub" {
-  route_table_id         = aws_route_table.Project_Public_Route.id
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.Project1_IGW.id
-}
-
+### Creating Route Table Association
 resource "aws_route_table_association" "Project1_pub_asso1" {
   subnet_id      = aws_subnet.Project1_Public_Subnet_1.id
-  route_table_id = aws_route_table.Project_Public_Route.id
+  route_table_id = aws_route_table.Project_Public_RT.id
 }
 
+### Creating Security Group
 resource "aws_security_group" "Project1_DevApp_Sg" {
   name        = "Project1_DevApp_Sg"
   description = "Allow SSH, HTTP, HTTPS inbound traffic and all outbound traffic"
@@ -84,11 +89,13 @@ resource "aws_security_group" "Project1_DevApp_Sg" {
   }
 }
 
+### Creating EC2 SSH Key
 resource "aws_key_pair" "project1_key" {
   key_name   = "pj1key"
   public_key = file("PATH-TO-YOUR-SSH-KEY")
 }
 
+### Creating EC2 Instance
 resource "aws_instance" "dev1" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t2.micro"
