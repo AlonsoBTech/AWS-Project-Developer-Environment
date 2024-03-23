@@ -10,7 +10,7 @@ and ready to use for spinning up containers when needed.
 - AWS Account
 - AWS IAM User
 - Terraform Insatlled
-- IDE of choice (VS Code was used for this project)
+- IDE of choice to write Terraform code
 
 # WHAT IS BEING CREATED
 - VPC
