@@ -1,7 +1,7 @@
 # AWS DEVELOPER ENVIRONMENT
 
 # About
-Creating an environment in AWS for developers. This environment will have a EC2 deployed that has docker installed
+Creating an environment in AWS for developers. This environment will have an EC2 deployed that has docker installed
 and ready to use for spinning up containers when needed.
 
 # Prerequisites
