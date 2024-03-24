@@ -286,19 +286,34 @@ docker ready ubuntu.txt
 ```
 </details>
 
-**Add your files to the git repository**
+**Deploy your code to AWS with the following commands**
+
+```bash
+terraform init
+terraform plan
+terraform validate
+terraform plan
+terraform apply -auto-approve
+```
+**Check your AWS console to see your resoucres then run Terraform command to delete everything**
+
+```bash
+terraform destroy -auto-approve
+```
+
+**Add your code to the repository**
 
 ```bash
 git add .
 ```
 
-**Commit the files now**
+**Commit the code to the repository**
 
 ```bash
 git commit -M "Terraform Code"
 ```
 
-**Push your code to git repository**
+**Push your code to the repository**
 
 ```bash
 git push origin main
