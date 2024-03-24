@@ -54,3 +54,18 @@ cd AWS-Project-Developer-Environment
 <details>
 <summary><code>providers.tf</code></summary>
 
+```bash
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.40.0"
+    }
+  }
+}
+
+provider "aws" {
+  region  = "ca-central-1"
+}
+```bash
+
