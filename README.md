@@ -1,5 +1,4 @@
 # AWS Developer Environment
-![image](https://github.com/AlonsoBTech/AWS-Project-Developer-Environment/assets/160416175/5b246a3a-34c5-476b-9bc2-531fdefa196d)
 
 ## 📋 <a name="table">Table of Contents</a>
 
@@ -15,6 +14,7 @@
 
 Creating an environment in AWS for developers. This environment will have an EC2 deployed that has docker installed
 and ready to use for spinning up containers when needed.
+![image](https://github.com/AlonsoBTech/AWS-Project-Developer-Environment/assets/160416175/5b246a3a-34c5-476b-9bc2-531fdefa196d)
 
 ## <a name="prerequisites">⚙️ Prerequisites</a>
 
