@@ -7,8 +7,6 @@
 3. 🔋 [What Is Being Created](#what-is-being-created)
 4. 🤸 [Quick Guide](#quick-guide)
 5. 🔗 [Links](#links)
-7. 🚀 [More](#more)
-
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -248,7 +246,7 @@ locals {
 ```
 </details>
 
-**Create your EC2 userdata.sh file**
+**Create your EC2 userdata.sh script file**
 
 </details>
 
@@ -318,4 +316,8 @@ git commit -M "Terraform Code"
 ```bash
 git push origin main
 ```
+## <a name="links">🔗 Links</a>
+
+- [Terraform AWS Provider Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+- Coming Soon: Blog post with detailed step by step walk through to completed this project.
 
