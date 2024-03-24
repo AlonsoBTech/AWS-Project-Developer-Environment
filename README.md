@@ -320,5 +320,5 @@ git push origin main
 ## <a name="links">🔗 Links</a>
 
 - [Terraform AWS Provider Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- Coming Soon: Blog post with detailed step by step walk through to complete this project.
+- Coming Soon: Blog post with detailed step by step walk through on how to complete the project.
 
