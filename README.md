@@ -46,7 +46,9 @@ git clone https://github.com/AlonsoBTech/AWS-Project-Developer-Environment.git
 cd AWS-Project-Developer-Environment
 ```
 
+
 **Create your Terraform providers.tf file**
+
 
 </details>
 
@@ -68,7 +70,9 @@ provider "aws" {
 }
 ```
 
+
 **Create your Terraform main.tf file**
+
 
 </details>
 
@@ -199,7 +203,9 @@ resource "aws_instance" "dev1" {
 }
 ```
 
+
 **Create your Terraform datasources.tf file**
+
 
 </details>
 
@@ -231,7 +237,9 @@ data "http" "my_public_ip" {
 }
 ```
 
+
 **Create your Terraform local.tf file**
+
 
 </details>
 
@@ -244,7 +252,9 @@ locals {
 }
 ```
 
+
 **Create your EC2 userdata.sh file**
+
 
 </details>
 
@@ -266,7 +276,9 @@ sudo apt-get update -y
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+
 **Create your .gitignore file**
+
 
 </details>
 
@@ -279,19 +291,26 @@ terraform.tfstate
 terraform.tfstate.backup
 docker ready ubuntu.txt
 ```
+
+
 **Add your files to the git repository**
+
 
 ```bash
 git add .
 ```
 
+
 **Commit the files now**
+
 
 ```bash
 git commit -M "Terraform Code"
 ```
 
+
 **Push your code to git repository**
+
 
 ```bash
 git push origin main
