@@ -1,3 +1,4 @@
+![_86746242-c866-41ff-a61f-fc1ddc55e6f1](https://github.com/AlonsoBTech/AWS-Project-Developer-Environment/assets/160416175/5dfe7655-0d4d-4c4a-b428-f6f600e88272)
 # AWS Developer Environment
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -319,5 +320,5 @@ git push origin main
 ## <a name="links">🔗 Links</a>
 
 - [Terraform AWS Provider Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- Coming Soon: Blog post with detailed step by step walk through to completed this project.
+- Coming Soon: Blog post with detailed step by step walk through to complete this project.
 
