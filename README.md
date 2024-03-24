@@ -6,7 +6,7 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Prerequisites](#prerequisites)
 3. 🔋 [What Is Being Created](#what-is-being-created)
-4. 🤸 [Quick Start](#quick-start)
+4. 🤸 [Quick Guide](#quick-guide)
 5. 🕸️ [Snippets](#snippets)
 6. 🔗 [Links](#links)
 7. 🚀 [More](#more)
@@ -37,3 +37,20 @@ What we will be creating:
 - VPC Route Table Route
 - VPC Route Table Association
 - EC2
+
+## <a name="quick-guide">🤸 Quick Guide</a>
+
+**First create your git repository (name it whatever you like) then clone the git repository**
+
+```bash
+git clone https://github.com/AlonsoBTech/AWS-Project-Developer-Environment.git
+cd AWS-Project-Developer-Environment
+```
+
+**Create your Terraform providers.tf file**
+
+</details>
+
+<details>
+<summary><code>providers.tf</code></summary>
+
