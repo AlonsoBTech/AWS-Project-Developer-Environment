@@ -9,7 +9,7 @@ and ready to use for spinning up containers when needed.
 # Prerequisites
 - AWS Account
 - AWS IAM User
-- Terraform Insatlled
+- Terraform Installed
 - IDE of choice to write Terraform code
 
 # What Is Being Created
