@@ -11,8 +11,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Creating an environment in AWS for developers. This environment will have an EC2 deployed that has docker installed
-and ready to deploy containers.
+Creating an environment in AWS for developers. This environment will have an EC2 deployed that has docker and jenkins installed, allowing for developers to test CICD pipelines and containerize applications.
 ![image](https://github.com/AlonsoBTech/AWS-Project-Developer-Environment/assets/160416175/5b246a3a-34c5-476b-9bc2-531fdefa196d)
 
 ## <a name="prerequisites">⚙️ Prerequisites</a>
