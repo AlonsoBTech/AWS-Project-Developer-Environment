@@ -104,8 +104,9 @@ resource "aws_key_pair" "project1_key" {
 
 ### Creating EC2 Instance
 resource "aws_instance" "dev1" {
+  count                  = 2
   ami                    = data.aws_ami.ubuntu.id
-  instance_type          = "t2.micro"
+  instance_type          = "t2.small"
   key_name               = aws_key_pair.project1_key.id
   vpc_security_group_ids = [aws_security_group.Project1_DevApp_Sg.id]
   subnet_id              = aws_subnet.Project1_Public_Subnet_1.id
